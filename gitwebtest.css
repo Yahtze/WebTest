@@ -24,6 +24,7 @@ header{
   left: 0;
   width: 100%;
   padding: 0 100px;
+  z-index: 999;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -68,5 +69,18 @@ header .navigation .menu .menu-item:hover{
 }
 
 .sub-item{
+  display: none;
+}
+
+.slider{
+  position: relative;
+  top: 111.67px;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: grey;
+}
+
+.slides input{
   display: none;
 }
