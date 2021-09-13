@@ -39,9 +39,34 @@ header #logo{
   border: black 5px solid;
 }
 
+header .navigation{
+  position: relative;
+  line-height: 75px;
+}
+
+header .navigation .menu{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  list-style: none;
+}
+
 .menu-item > a{
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
-  font-size: 2em;
+  font-size: 1.2em;
+  font-weight: bold;
   color: white;
+  margin: 0 20px;
+  padding: 25px 0;
+}
+
+header .navigation .menu .menu-item:hover{
+  border-bottom: 5px solid white;
+}
+
+.sub-item{
+  display: none;
 }
