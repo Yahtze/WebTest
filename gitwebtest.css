@@ -76,11 +76,63 @@ header .navigation .menu .menu-item:hover{
   position: relative;
   top: 111.67px;
   width: 100%;
-  height: 100vh;
+  height: fit-content;
   overflow: hidden;
-  background-color: grey;
+  margin-bottom: 1000px;
+}
+
+.slides{
+  height: fit-content;
+  width: 500%;
+  display: flex;
+}
+
+.slide{
+  width: 20%;
+  transition: 1s;
+}
+
+.slide img{
+  width: 100%;
+  height: fit-content;
 }
 
 .slides input{
   display: none;
+}
+
+.navigation-manual{
+  position: absolute;
+  width: 100%;
+  margin-top: 690px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn{
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 5px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+
+.manual-btn:hover{
+  background: white;
+}
+
+#rad1:checked ~ .first{
+  margin-left: 0;
+}
+
+#rad2:checked ~ .first{
+  margin-left: -20%;
+}
+
+#rad3:checked ~ .first{
+  margin-left: -40%;
 }
